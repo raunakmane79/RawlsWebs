@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rawls Research Productivity</title>
+  <meta name="theme-color" content="#000000" />
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="topbar-inner">
+
+      <header class="topbar">
+  <div class="topbar-inner">
+    <div class="logoWrap">
+      <a href="https://raunakmane79.github.io/RawlsResearchWeb/"
+         class="rawls-logo-link"
+         aria-label="Go to Rawls Research home">
+        <img class="rawls-logo"
+             src="RawlsRlogo.jpeg"
+             alt="Rawls College of Business logo">
+      </a>
+
+      <div class="brandText">
+        <div class="brandTitle">Rawls College Research</div>
+        <div class="brandSub">
+          Rawls College of Business · Texas Tech University
+        </div>
+      </div>
+    </div>
+
+    <div class="headerActions">
+      <a href="index.html" class="pillBtn">Home</a>
+
+      <a href="https://www.linkedin.com/showcase/research-rawls-college-of-business/"
+         target="_blank"
+         class="pillBtn"
+         aria-label="Rawls Research on LinkedIn"
+         title="LinkedIn">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</header>
+
+
+      <!-- Header Actions -->
+      <div class="headerActions">
+        <a href="index.html" class="pillBtn">Home</a>
+
+        <a href="https://www.linkedin.com/showcase/research-rawls-college-of-business/"
+           target="_blank"
+           class="pillBtn"
+           aria-label="Rawls Research on LinkedIn"
+           title="LinkedIn">
+          LinkedIn
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1 class="pageTitle">Rawls Research Productivity (UNDER DEVELOPMENT)</h1>
+    <p class="pageSubtitle">Publication counts by Area across key categories.</p>
+
+    <div class="toolbar">
+      <button class="refreshBtn" id="refreshBtn">Refresh</button>
+
+      <div class="dateFilter">
+        <label class="dateLabel">From
+          <input type="date" id="dateFrom" class="dateInput">
+        </label>
+
+        <label class="dateLabel">To
+          <input type="date" id="dateTo" class="dateInput">
+        </label>
+
+        <button class="dateBtn" id="applyDate" type="button">Apply</button>
+        <button class="dateBtn ghost" id="clearDate" type="button">Clear</button>
+      </div>
+    </div>
+
+    <section class="grid">
+      <div class="card">
+        <h2 class="cardTitle"><span class="tag">5*</span> 5* Publications by Area</h2>
+        <p class="cardSub">Count by Area</p>
+        <div class="chartBox"><canvas id="chart5star"></canvas></div>
+      </div>
+
+      <div class="card">
+        <h2 class="cardTitle"><span class="tag">5</span> 5 Publications by Area</h2>
+        <p class="cardSub">Count by Area</p>
+        <div class="chartBox"><canvas id="chart5"></canvas></div>
+      </div>
+
+      <div class="card">
+        <h2 class="cardTitle"><span class="tag">UTD</span> UTD Publications by Area</h2>
+        <p class="cardSub">Count by Area</p>
+        <div class="chartBox"><canvas id="chartUTD"></canvas></div>
+      </div>
+
+      <div class="card">
+        <h2 class="cardTitle"><span class="tag">FT</span> Financial Times Publications by Area</h2>
+        <p class="cardSub">Count by Area</p>
+        <div class="chartBox"><canvas id="chartFT"></canvas></div>
+      </div>
+    </section>
+
+    <div class="status" id="rrpStatus">Loading…</div>
+  </main>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <!-- Your JS -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
